@@ -1,0 +1,32 @@
+{
+  "name": "sql-fmt",
+  "version": "1.0.0",
+  "description": "A TypeScript CLI to use sql formater.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sql-fmt": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "db",
+    "json",
+    "typescript",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
