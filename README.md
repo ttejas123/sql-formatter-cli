@@ -29,9 +29,13 @@ Examples:
 - With options:
   sql-fmt --indent 4 --keyword-case lower "SELECT id, name FROM users WHERE id IN (1, 2, 3);"
 
+- Using --sql option explicitly:
+  sql-fmt --sql "select * from users where id = 42"
+
 ## Options
 - --indent <n>        Number of spaces per indent (default: 2)
 - --keyword-case <c>  Keyword case: upper | lower | keep (default: upper)
+- --sql <query>       Provide SQL as a string explicitly (overrides file/stdin)
 - --help              Show help
 - --version           Show version
 
